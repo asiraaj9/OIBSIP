@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator App</title>
+	<style>
+	
+	body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+	}
+
+h1 {
+	position: relative;
+	right: 1%;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  font-size: 2rem;
+  padding: 1rem;
+  width: 68%;
+  border:3px solid black;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  text-align:center;
+}
+
+input[type="button"] {
+  font-size: 2rem;
+  padding: 1rem;
+  width: 18%;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #333;
+  color: #fff;
+}
+div{
+margin-bottom: 0%;
+padding-left: 5%;
+}
+#C{
+background-color: coral;
+width: 75%;
+}
+
+	</style>
+  </head>
+  <body>
+    <h1>Calculator App</h1>
+<div>
+      <input type="text" id="result" readonly><br><br>
+      <input type="button" value="1" onclick="document.getElementById('result').value += '1'">
+      <input type="button" value="2" onclick="document.getElementById('result').value += '2'">
+      <input type="button" value="3" onclick="document.getElementById('result').value += '3'">
+      <input type="button" value="+" onclick="document.getElementById('result').value += '+'"><br><br>
+      <input type="button" value="4" onclick="document.getElementById('result').value += '4'">
+      <input type="button" value="5" onclick="document.getElementById('result').value += '5'">
+      <input type="button" value="6" onclick="document.getElementById('result').value += '6'">
+      <input type="button" value="-" onclick="document.getElementById('result').value += '-'"><br><br>
+      <input type="button" value="7" onclick="document.getElementById('result').value += '7'">
+      <input type="button" value="8" onclick="document.getElementById('result').value += '8'">
+      <input type="button" value="9" onclick="document.getElementById('result').value += '9'">
+      <input type="button" value="*" onclick="document.getElementById('result').value += '*'"><br><br>
+	  <input type="button" value="CE" onclick="document.getElementById('result').value = document.getElementById('result').value.slice(0, -1)">
+      
+      <input type="button" value="0" onclick="document.getElementById('result').value += '0'">
+      <input type="button" value="/" onclick="document.getElementById('result').value += '/'">
+      <input type="button" value="=" onclick="document.getElementById('result').value = eval(document.getElementById('result').value)"><br><br>
+	
+	  <input type="button" value="(" onclick="document.getElementById('result').value += '('">
+	  <input type="button" value=")" onclick="document.getElementById('result').value += ')'">
+	  <input type="button" value="." onclick="document.getElementById('result').value += '.'">
+	  <input type="button" value="√" onclick="document.getElementById('result').value += 'Math.sqrt('">
+	  <br><br>
+	  <input type="button" id="C" value="C" onclick="document.getElementById('result').value = ''">
+	  
+</div> </body>
+</html>

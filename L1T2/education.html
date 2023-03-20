@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body{
+      overflow: hidden;
+       height: 700px;
+       }
+    *{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+        #base-home{
+            width: cover;
+       height:800px;
+    background-color:#bac1c8;
+    
+        
+    box-sizing: border-box;}
+
+        #home1{
+           
+        font-size: xx-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            height: 100px;
+            color: white;outline: 3px solid black;text-shadow: 3px 3px 3px  black;
+
+          
+        }
+   .nav{
+    display: flex;
+    flex-wrap: wrap;
+   border-right: 3px solid black;border-bottom: 3px solid black;
+    display:inline-block ;
+    width: 200px;
+    height: 700px;
+    position: relative;
+   }
+   .nav-bar{
+
+position: absolute;
+top: 9%;
+height: 500px;
+   left: 5%;
+   }
+   .nav-bar-contents{
+    
+    justify-content: center;
+    text-align: center;
+   position: absolute;
+   top: 10%;
+    margin-bottom: 10%;
+    border: 3px solid #0f110f;
+    width: 180px;
+    height:60px ;
+position: relative;
+background-color: #edeaf000;
+
+
+border-radius: 30px 30px 30px 30px;
+
+   }
+   .nav-bar-contents:hover,.nav-bar-data:hover{
+    background-color: aliceblue;
+    color: rgb(12, 2, 2);
+   }
+   .nav-bar-data{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: larger;
+    text-align: center;
+color: #973232;
+   }  
+   .home-aboutme{
+    height:600px;
+    width: 1000px;;
+  
+    bottom: 80%;
+
+
+position: relative;
+
+left:20%;
+
+   }  #home1::first-letter{
+    color: crimson;
+   }
+   .edu{
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+     box-sizing: border-box;
+    width: 1000px;
+    height: 130px;
+    border-bottom: 3px solid black;
+   }
+   .edu1{
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+
+   }
+   .edu2{
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+   }
+   .ec{
+    opacity: .4;
+    font-size: small;
+    position: relative;
+    top: 17%;
+   
+   }
+  .cou{
+    position: relative;
+    left: 5%;top: 7%;
+  }
+   h4{
+   position: relative;
+    font-size: 120%;
+    top: 5%;
+
+   }
+   .ba{
+    font-size: 200%;
+   }
+   .ee{
+ position: relative;
+ top: 15%;
+font-size: medium;   
+}
+.skills{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 100px 100px 100px 100px;
+   border-bottom: 3px solid black;
+   position: relative;top: 2%;
+    
+}
+.skills-grid{
+   position: relative;
+left: 17%;  
+top: 7%;
+  
+}
+.cer{
+    position: relative;
+top: 3%;font-family: 'Times New Roman', Times, serif;
+}
+.cer1{display: grid;
+    
+    grid-template-columns: 120px 120px 120px 120px 120px 120px 120px;
+   position: relative;
+   left: 2%;top: 4%;grid-row-gap: 10px;
+}
+.cer-sou{
+  position: relative;
+    left: 5%;font-size: small;opacity: .4;
+}#skiii{
+    position: relative;top: 1%;
+}
+    </style>
+</head>
+<body>
+    <div id="base-home">
+        <div id="home1">
+          <center> <h1> Education</h1></center>
+        </div>
+        <hr noshade> 
+        <div class="nav">
+        <div class="nav-bar">
+            <h3 class="nav-bar-contents">
+                <a class="nav-bar-data" href="portfolio.html">
+                    Home
+                </a>
+            </h3>
+    <h3 class="nav-bar-contents">
+        <a class="nav-bar-data" href="aboutme.html">
+            About Me
+        </a>
+    </h3>
+    <h3 class="nav-bar-contents">
+       <a class="nav-bar-data" href="education.html"> Education</a>
+    </h3>
+    <h3 class="nav-bar-contents">
+    <a class="nav-bar-data" href="projects.html">Projects</a>
+    </h3>
+    <h3 class="nav-bar-contents">
+        <a class="nav-bar-data" href="contact.html">Contact</a>
+    
+    </h3>
+    </div>
+    </div>
+    <div class="home-aboutme">
+<div class="edu">
+    <div class="edu1">
+<h1 class="ba">Bachelor's Degree</h1>
+<hr>
+<h4>
+    R.G.P.V. University
+</h4>
+<div class="cou">
+<p class="ee"><ul><li>  Electronics & Telecommunications</p>
+</li></ul>
+    <p class="ec"> 2019-2023</p></div>
+    </div>
+    <div class="edu2">
+ <h1 class="ba"> Intermediate</h1>
+<h4>
+    St.Paul H.S. School
+</h4><div class="cou">
+<p class="ee"><ul> <li> PCM(Maths Stream)
+</li></ul>
+</p><p class="ec">  2018-2019</p></div>
+</div>
+</div> <h1 id="skiii">Skills</h1>
+<div class="skills">
+<div class="skills-grid">
+  <ul><li>  Core-Java
+</li></ul></div>
+<div class="skills-grid">
+    <ul><li>  Oracle-SQL
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  C Language
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  C++
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  HTML
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  CSS
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  JavaScript
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Android-Studio
+    </li></ul>
+</div>
+<div class="skills-grid">
+    <ul><li>  Embedded Systems
+    </li></ul>
+</div>
+<div class="skills-grid">
+    <ul><li>  Creative Skills
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li> communication
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  IT skills
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Adaptability
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Attentive 
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Team Work
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li> Problem Solving 
+            </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Negotiation 
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Critical Thinking
+    </li></ul>
+</div><div class="skills-grid">
+    <ul><li>  Time Management
+    </li></ul>
+</div><div class="skills-grid">
+<ul><li>  Active-listening
+</li></ul>
+</div>
+
+</div>
+<h1 class="cer"> Certificates</h1>
+    <div class="cer1">
+        <div class="cerrs">
+            <ul><li> <h4>Core-Java</h4>
+           <p class="cer-sou">
+                Naresh IT
+                <br>(07/2022-11/2022)
+            </p></li></ul>
+        </div><div class="cerrs">
+            <ul><li> <h4>Oracle-SQL</h4>
+           <p class="cer-sou">
+                Naresh IT
+                <br>(07/2022-11/2022)
+            </p></li></ul>
+        </div><div class="cerrs">
+            <ul><li> <h4>C & C++</h4>
+           <p class="cer-sou">
+                G.I.S.T.
+                <br>(01/2022-06/2022)
+            </p></li></ul>
+        </div><div class="cerrs">
+            <ul><li> <h4>Android-Studio</h4>
+           <p class="cer-sou">
+                SkillVertex
+                <br>(06/2022-08/2022)
+            </p></li></ul>
+        </div><div class="cerrs">
+            <ul><li> <h4>Web Design</h4>
+           <p class="cer-sou">
+                G.I.S.T
+                <br>(01/2022-04/2022)
+            </p></li></ul>
+        </div><div class="cerrs">
+            <ul><li> <h4>Embedded Systems</h4>
+           <p class="cer-sou">
+                Robotronix
+                <br>(08/2021-09/2021)
+            </p></li></ul>
+        </div><div class="cerrs">
+            <ul><li> <h4>Matlab</h4>
+           <p class="cer-sou">
+                Udemy
+                <br>(04/2021-06/2021)
+            </p></li></ul>
+        </div>
+    
+
+       </div></div>
+</body>
+</html>
